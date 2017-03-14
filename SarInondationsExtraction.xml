@@ -1,0 +1,40 @@
+<root>
+  <key>SarInondationsExtraction</key>
+  <exec>otbcli_SarInondationsExtraction</exec>
+  <longname>SarInondationsExtraction</longname>
+  <group>CRIM</group>
+  <description>Flood extraction technique</description>
+  <parameter>
+    <parameter_type source_parameter_type="ParameterType_InputImage">ParameterRaster</parameter_type>
+    <key>in1</key>
+    <name>Image de l'avant catastophe</name>
+    <description>The input image 1</description>
+  </parameter>
+  <parameter>
+    <parameter_type source_parameter_type="ParameterType_InputImage">ParameterRaster</parameter_type>
+    <key>in2</key>
+    <name>Image de l'apres catastophe</name>
+    <description>The input image 2</description>
+  </parameter>
+  <parameter>
+    <parameter_type source_parameter_type="ParameterType_OutputVectorData">OutputVector</parameter_type>
+    <key>out1</key>
+    <name>L'etat de la riviere avant la catastrophe</name>
+    <description>The output vector 1</description>
+    <hidden />
+  </parameter>
+  <parameter>
+    <parameter_type source_parameter_type="ParameterType_OutputVectorData">OutputVector</parameter_type>
+    <key>out2</key>
+    <name>L'etat de la riviere apres la catastrophe</name>
+    <description>The output vector 2</description>
+    <hidden />
+  </parameter>
+  <parameter>
+    <parameter_type source_parameter_type="ParameterType_OutputVectorData">OutputVector</parameter_type>
+    <key>out3</key>
+    <name>L'etendue des inondations</name>
+    <description>The output vector 3</description>
+    <hidden />
+  </parameter>
+  </root>
